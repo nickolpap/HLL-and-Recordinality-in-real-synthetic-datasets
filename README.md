@@ -26,4 +26,18 @@ The real datasets are plain-text novels **not included** in this repository.
 Download them from Project Gutenberg:
 - Project Gutenberg Free eBooks: https://www.gutenberg.org/
 
+##Instructions to compile
+Requirements: Python 3.x and the `randomhash` package for the hash function (py -m pip install randomhash)
+
+#RealData
+1.Download the real data sets
+3. Run main_hll.py and main_rec.py with fixed memory.
+4. Run dracula_hll_memoryCheck.py & dracula_rec_memoryCheck.py for memory experiments only on dracula dataset.
+
+#Synthetic Data
+
+1. (Optional) Run `zipf_stream.py` alone if you want to just inspect or test the Zipf stream generator
+2. Run the HLL and Recordinality experiments on synthetic Zipf data ( synth_hll.py & synth_rec.py )
+
+
 
